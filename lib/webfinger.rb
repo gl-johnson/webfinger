@@ -56,6 +56,9 @@ module WebFinger
   def http_config(&block)
     @http_config ||= block
   end
+  def reset_http_config!
+    @http_config = nil
+  end
 end
 
 require 'webfinger/exception'
